@@ -55,4 +55,12 @@ endchoice
 
 endif # LVGL
 
+config NICE_PERI_VIEW_SHOW_SLEEP_ART_ON_IDLE
+    bool
+    default NICE_OLED_SHOW_SLEEP_ART_ON_IDLE
+
+config NICE_PERI_VIEW_SHOW_SLEEP_ART_ON_SLEEP
+    bool
+    default NICE_OLED_SHOW_SLEEP_ART_ON_SLEEP
+
 endif

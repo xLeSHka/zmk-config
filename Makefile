@@ -37,12 +37,8 @@ extra_modules_dir=${PWD}
 extra_modules= -DZMK_EXTRA_MODULES="/boards"
 config=${PWD}/config
 nice_mount=/Volumes/NICENANO
-puchi_mount=/Volumes/NRF52BOOT
-xiao_mount=/Volumes/XIAO-SENSE
 zmk_image=zmkfirmware/zmk-dev-arm:3.5
 nice=nice_nano_v2
-puchi=puchi_ble_v1
-xiao=seeeduino_xiao_ble
 urob=zmk-codebase_urob
 default=zmk-codebase_default
 # --name zmk-$@ is for codebase_urob, for example: zmk-codebase_urob
@@ -57,7 +53,6 @@ docker_opts= \
 	${zmk_image}
 
 ### name
-keyboard_name_nice= '-DCONFIG_ZMK_KEYBOARD_NAME="Nice_Corne_View"'
 keyboard_name_nice_oled= '-DCONFIG_ZMK_KEYBOARD_NAME="Nice_Corne_Oled"'
 
 west_built_nice= \
@@ -70,13 +65,13 @@ shield_settings_reset= \
 	    -- -DSHIELD="settings_reset" -DZMK_CONFIG="/zmk-config"
 shield_corne_left= \
 	    -- -DSHIELD="corne_left" -DZMK_CONFIG="/zmk-config"
-shield_corne_right_view= \
-	    -- -DSHIELD="corne_right nice_view_adapter nice_view" \
+shield_corne_right_oled= \
+	    -- -DSHIELD="corne_right nice_oled" \
 	    -DZMK_CONFIG="/zmk-config"
 shield_corne_right= \
 	    -- -DSHIELD="corne_right" -DZMK_CONFIG="/zmk-config"
-shield_corne_left_view= \
-	    -- -DSHIELD="corne_left nice_view_adapter nice_view" \
+shield_corne_left_oled= \
+	    -- -DSHIELD="corne_left nice_oled" \
 	    -DZMK_CONFIG="/zmk-config"
 ###  uf2
 uf2_copy_nice_corne_settings_reset=/zmk/build/zephyr/zmk.uf2 \
@@ -105,15 +100,15 @@ codebase_urob: clone_zmk_urob
 		west update'
 
 ### CODEBASE_UROB START
-only_nice_corne_left_view_urob:
+only_nice_corne_left_oled_urob:
 	docker run --rm ${docker_opts} \
-		${west_built_nice} ${shield_corne_left_view} \
-		${keyboard_name_nice} ${extra_modules}
+		${west_built_nice} ${shield_corne_left_oled} \
+		${keyboard_name_nice_oled} ${extra_modules}
 	docker cp ${urob}:${uf2_copy_nice_corne_left}
 	${uf2_chmod_nice_corne_left}
-only_nice_corne_right_view_urob:
+only_nice_corne_right_oled_urob:
 	docker run --rm ${docker_opts} \
-		${west_built_nice} ${shield_corne_right_view} ${extra_modules}
+		${west_built_nice} ${shield_corne_right_oled} ${extra_modules}
 	docker cp ${urob}:${uf2_copy_nice_corne_right}
 	${uf2_chmod_nice_corne_right}
 only_nice_settings_reset_urob:
@@ -126,11 +121,11 @@ only_nice_settings_reset_urob:
 
 
 
-only_corne_left_view_urob: only_nice_corne_left_view_urob
-only_corne_right_view_urob: only_nice_corne_right_view_urob
+only_corne_left_oled_urob: only_nice_corne_left_oled_urob
+only_corne_right_oled_urob: only_nice_corne_right_oled_urob
 settings_reset_urob: only_nice_settings_reset_urob
-corne_urob: only_corne_left_view_urob \
-	only_corne_right_view_urob \
+corne_urob: only_corne_left_oled_urob \
+	only_corne_right_oled_urob \
 	settings_reset_urob
 ### CODEBASE_UROB END
 
