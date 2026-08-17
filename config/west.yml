@@ -7,17 +7,12 @@ manifest:
       url-base: https://github.com/mctechnology17
     - name: xLeShka
       url-base: https://github.com/xLeSHka
-    - name: cormoran
-      url-base: https://github.com/cormoran
   projects:
     - name: zmk
       remote: zmkfirmware
       revision: v0.3.0
       import: app/west.yml
     # nice_oled - nice_epaper
-    - name: zmk-behavior-runtime-sensor-rotate
-      remote: cormoran
-      revision: main
     - name: zmk-nice-oled
       remote: xLeShka
       revision: main
