@@ -16,4 +16,18 @@
         , <&pro_micro 14 GPIO_ACTIVE_HIGH>
         ;
 };
+/ {
+    left_encoder: encoder_left {
+        compatible = "alps,ec11";
+        // Замените 21 и 20 на номера пинов &pro_micro, к которым вы припаяли контакты A и B
+        a-gpios = <&pro_micro 21 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        b-gpios = <&pro_micro 20 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        steps = <80>; // Для EC11 с 20 тиками на оборот обычно используется 80 (или 72)
+    };
+};
+
+&sensors {
+    status = "okay";
+    sensors = <&left_encoder>;
+};
 // vim: filetype=dts fdm=marker:
