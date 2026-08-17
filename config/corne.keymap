@@ -45,7 +45,7 @@ behaviors {
                   &kp LGUI   &mo 1     &kp SPACE    &kp RET  &mo 2  &kp RALT
 &kp C_MUTE                                                                                                &kp C_MUTE
             >;
-            sensor-bindings = <<&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
         };
 
         lower_layer {
@@ -81,7 +81,7 @@ behaviors {
                              &kp LGUI   &studio_unlock    &kp SPACE    &kp RET    &studio_unlock     &kp RALT
 &kp C_MUTE                                                                                                            &kp C_MUTE
             >;
-        sensor-bindings = <<&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
+        sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
         };
         extra_1 {
             status = "reserved";
