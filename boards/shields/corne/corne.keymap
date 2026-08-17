@@ -26,6 +26,7 @@
    &kp LSHFT &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp ESC
                   &kp LGUI &mo 1 &kp SPACE   &kp RET &mo 2 &kp RALT
                         >;
+sensor-bindings = <&rsr_vol &rsr_trans>;
                 };
                 lower_layer {
 // -----------------------------------------------------------------------------------------
