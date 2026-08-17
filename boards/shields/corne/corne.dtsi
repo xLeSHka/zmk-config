@@ -55,19 +55,7 @@ RC(2,1) RC(2,2) RC(2,3) RC(2,4) RC(2,5)  RC(2,6) RC(2,7) RC(2,8) RC(2,9) RC(2,10
                         RC(3,3) RC(3,4) RC(3,5)  RC(3,6) RC(3,7) RC(3,8)
         >;
     };
-    encoder: encoder {
-        compatible = "alps,ec11";
-        // Замените 21 и 20 на номера пинов &pro_micro, к которым вы припаяли контакты A и B
-        a-gpios = <&pro_micro 21 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-        b-gpios = <&pro_micro 20 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-        steps = <80>; // Для EC11 с 20 тиками на оборот обычно используется 80 (или 72)
-        status = "okay";
-    };
-    sensors {
-        compatible = "zmk,keymap-sensors";
-        triggers-per-rotation = <20>;
-        sensors = <&encoder>;
-    };
+
     kscan0: kscan {
         compatible = "zmk,kscan-gpio-matrix";
         wakeup-source;
