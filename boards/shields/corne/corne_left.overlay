@@ -16,7 +16,4 @@
         , <&pro_micro 14 GPIO_ACTIVE_HIGH>
         ;
 };
-&encoder {
-    status = "okay";
-};
 // vim: filetype=dts fdm=marker:
