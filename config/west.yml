@@ -7,6 +7,8 @@ manifest:
       url-base: https://github.com/mctechnology17
     - name: xLeShka
       url-base: https://github.com/xLeSHka
+    - name: cormoran
+      url-base: https://github.com/cormoran
   projects:
     - name: zmk
       remote: zmkfirmware
