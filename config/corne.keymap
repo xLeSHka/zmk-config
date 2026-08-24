@@ -111,7 +111,7 @@
         compatible = "zmk,keymap";
 
         default_layer {
-            display-name = "BAS";
+            display-name = "bas";
 
             // -----------------------------------------------------------------------------------------
             // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
@@ -145,6 +145,7 @@
         };
 
         raise {
+            display-name = "rai";
             bindings = <
 &trans  &trans  &kp PG_UP  &kp UP    &kp PG_DN  &kp HOME    &kp CARET  &kp PG_UP  &kp UP    &kp PG_DN  &kp HOME  &trans
 &trans  &trans  &kp LEFT   &kp DOWN  &kp RIGHT  &kp END     &kp MINUS  &kp LEFT   &kp DOWN  &kp RIGHT  &kp END   &trans
@@ -154,6 +155,7 @@
         };
 
         fbut {
+            display-name = "fbu";
             bindings = <
 &kp F1  &kp F2  &kp F3  &kp F4   &kp F5   &kp F6     &trans  &kp LEFT_GUI  &kp LALT  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &trans
 &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12    &trans  &trans        &trans    &trans          &trans            &trans

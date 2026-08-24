@@ -1,6 +1,6 @@
 layout: {zmk_keyboard: corne}
 layers:
-  BAS:
+  bas:
   - Esc
   - Q
   - W
@@ -12,7 +12,7 @@ layers:
   - I
   - O
   - P
-  - {t: Alt+␣, h: fbut}
+  - {t: Alt+␣, h: fbu}
   - ↹
   - A
   - S
@@ -42,7 +42,7 @@ layers:
   - {t: ␣, h: LEFT COMMAND}
   - LEFT ALT
   - BACKSPACE
-  - {t: ENTER, h: raise}
+  - {t: ENTER, h: rai}
   low:
   - '~'
   - '1'
@@ -86,7 +86,7 @@ layers:
   - KP COMMA
   - KP DOT
   - Sft+KP PLUS
-  raise:
+  rai:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - Page Up
@@ -129,7 +129,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
-  fbut:
+  fbu:
   - F1
   - F2
   - F3
