@@ -39,7 +39,7 @@ layers:
   - ']'
   - $$mdi:apple-keyboard-command$$
   - low
-  - {t: ␣, h: LEFT COMMAND}
+  - {t: ␣, h: '$$mdi:apple-keyboard-control$$'}
   - LEFT ALT
   - BACKSPACE
   - {t: ENTER, h: rai}
