@@ -12,7 +12,7 @@ layers:
   - I
   - O
   - P
-  - {t: ␣, h: fbu}
+  - {t: Alt+␣, h: fbu}
   - ↹
   - A
   - S
