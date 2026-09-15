@@ -22,76 +22,91 @@
         tilde {
             bindings = <&kp TILDE>;
             key-positions = <12 0>;
+            timeout-ms = <35>;
         };
 
         grave {
             bindings = <&kp GRAVE>;
             key-positions = <24 12>;
+            timeout-ms = <35>;
         };
 
         plus {
             bindings = <&kp KP_PLUS>;
-            key-positions = <2 3>;
+            key-positions = <15 3>;
+            timeout-ms = <35>;
         };
 
         minus {
             bindings = <&kp KP_MINUS>;
-            key-positions = <3 4>;
+            key-positions = <4 16>;
+            timeout-ms = <35>;
         };
 
         lparenthes {
             bindings = <&kp LEFT_PARENTHESIS>;
-            key-positions = <4 5>;
+            key-positions = <5 17>;
+            timeout-ms = <35>;
         };
 
         quote {
             bindings = <&kp DOUBLE_QUOTES>;
-            key-positions = <15 16>;
+            key-positions = <16 28>;
+            timeout-ms = <35>;
         };
 
         squote {
             bindings = <&kp SINGLE_QUOTE>;
-            key-positions = <19 20>;
+            key-positions = <8 20>;
+            timeout-ms = <35>;
         };
 
         lbracket {
             bindings = <&kp LEFT_BRACKET>;
-            key-positions = <16 17>;
+            key-positions = <17 29>;
+            timeout-ms = <35>;
         };
 
         lbrace {
             bindings = <&kp LEFT_BRACE>;
-            key-positions = <28 29>;
+            key-positions = <4 16>;
+            timeout-ms = <35>;
         };
 
         rparenthes {
             bindings = <&kp RIGHT_PARENTHESIS>;
-            key-positions = <6 7>;
+            key-positions = <6 18>;
+            timeout-ms = <35>;
         };
 
         rbracket {
             bindings = <&kp RIGHT_BRACKET>;
-            key-positions = <18 19>;
+            key-positions = <18 30>;
+            timeout-ms = <35>;
         };
 
         rbrace {
             bindings = <&kp RIGHT_BRACE>;
-            key-positions = <30 31>;
+            key-positions = <7 19>;
+            timeout-ms = <35>;
         };
 
         under {
             bindings = <&kp UNDER>;
-            key-positions = <7 8>;
+            key-positions = <7 19>;
+            timeout-ms = <35>;
         };
 
         pipe {
             bindings = <&kp PIPE>;
-            key-positions = <8 9>;
+            key-positions = <20 32>;
+            timeout-ms = <35>;
         };
 
         equal {
             bindings = <&kp EQUAL>;
-            key-positions = <31 32>;
+            key-positions = <19 31>;
+            timeout-ms = <35>;
         };
     };
 
