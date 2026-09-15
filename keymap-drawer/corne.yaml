@@ -222,7 +222,7 @@ combos:
   k: '`'
 - p: [15, 3]
   k: KP PLUS
-- p: [4, 16]
+- p: [27, 15]
   k: KP MINUS
 - p: [5, 17]
   k: (
