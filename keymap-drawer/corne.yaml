@@ -1,61 +1,7 @@
 layout: {zmk_keyboard: corne}
 layers:
-  bas:
-  - Esc
-  - Q
-  - W
-  - E
-  - R
-  - T
-  - Y
-  - U
-  - I
-  - O
-  - P
-  - {t: Alt+␣, h: fbu}
-  - ↹
-  - A
-  - S
-  - D
-  - F
-  - G
-  - H
-  - J
-  - K
-  - L
-  - ;
-  - ''''
-  - $$mdi:apple-keyboard-shift$$
-  - Z
-  - X
-  - C
-  - V
-  - B
-  - N
-  - M
-  - ','
-  - .
-  - /
-  - ']'
-  - $$mdi:apple-keyboard-command$$
-  - low
-  - {t: ␣, h: '$$mdi:apple-keyboard-control$$'}
-  - LEFT ALT
-  - BACKSPACE
-  - {t: ENTER, h: rai}
+  bas: [Esc, Q, W, E, R, T, Y, U, I, O, P, '=', ↹, A, S, D, F, G, H, J, K, L, ;, '''', /, Z, X, C, V, B, N, M, ',', ., (, '-', low, '[', ␣, ENTER, BACKSPACE, rai]
   low:
-  - '~'
-  - '1'
-  - '2'
-  - '3'
-  - '4'
-  - '5'
-  - '6'
-  - '7'
-  - '8'
-  - '9'
-  - '0'
-  - $$mdi:backspace-outline$$
   - '`'
   - '!'
   - '@'
@@ -63,52 +9,47 @@ layers:
   - $
   - '%'
   - ^
-  - AMPS
+  - AMPERSAND
   - '*'
   - (
   - )
-  - '`'
-  - $$mdi:apple-keyboard-shift$$
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - Alt+␣
-  - _
+  - '-'
+  - '~'
+  - {t: LEFT CONTROL, h: sticky}
+  - {t: LEFT GUI, h: sticky}
+  - {t: LEFT ALT, h: sticky}
+  - {t: LEFT SHIFT, h: sticky}
   - +
+  - '='
   - '{'
   - '}'
+  - _
+  - ;
+  - ''''
+  - \
   - '|'
-  - '~'
-  - adj
+  - <
+  - '>'
+  - '?'
+  - ':'
+  - '['
+  - ']'
+  - ','
+  - ','
+  - .
+  - /
   - {type: held}
-  - LEFT COMMAND
-  - KP COMMA
-  - KP DOT
-  - Sft+KP PLUS
+  - adj
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '"'
+  - fbu
   rai:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - Page Up
   - ↑
-  - Page Down
-  - Home
-  - ^
-  - Page Up
-  - ↑
-  - Page Down
-  - Home
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - ←
-  - ↓
-  - →
-  - End
-  - '-'
-  - ←
-  - ↓
-  - →
+  - PAGE DOWN
   - End
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -118,83 +59,100 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - ←
+  - ↓
+  - →
+  - End
+  - {t: ▽, type: trans}
+  - {t: RIGHT SHIFT, h: sticky}
+  - {t: RIGHT ALT, h: sticky}
+  - {t: RIGHT GUI, h: sticky}
+  - {t: RIGHT CONTROL, h: sticky}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - fbu
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
   fbu:
-  - F1
-  - F2
-  - F3
-  - F4
-  - F5
-  - F6
   - {t: ▽, type: trans}
-  - LEFT GUI
-  - $$mdi:apple-keyboard-option$$
-  - LEFT SHIFT
-  - LEFT CONTROL
-  - {type: held}
-  - F7
-  - F8
-  - F9
+  - {t: ▽, type: trans}
   - F10
   - F11
   - F12
   - {t: ▽, type: trans}
+  - '1'
+  - '2'
+  - '3'
+  - F1
+  - F2
+  - F3
+  - {t: ▽, type: trans}
+  - {t: '$$mdi:apple-keyboard-control$$', h: sticky}
+  - {t: '$$mdi:apple-keyboard-command$$', h: sticky}
+  - {t: '$$mdi:apple-keyboard-option$$', h: sticky}
+  - {t: '$$mdi:apple-keyboard-shift$$', h: sticky}
+  - {t: ▽, type: trans}
+  - '4'
+  - '5'
+  - '6'
+  - F4
+  - F5
+  - F6
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - '7'
+  - '8'
+  - '9'
+  - F7
+  - F8
+  - F9
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   adj:
   - Boot
   - Reset
   - OUT TOG
   - {t: '$$mdi:led-on$$', h: '$$mdi:page-previous-outline$$', type: tap_dance}
   - {t: '$$mdi:led-on$$', h: '$$mdi:page-next-outline$$', type: tap_dance}
-  - '5'
-  - '6'
-  - '7'
-  - '8'
-  - '9'
-  - '0'
-  - $$mdi:backspace-outline$$
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - BT CLR
   - BT 1
   - BT 2
   - BT 3
   - BT 4
   - BT 5
-  - ←
-  - ↓
-  - ↑
-  - →
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - EP TOG
@@ -209,40 +167,9 @@ layers:
   - {t: '$$mdi:led-on$$', h: '$$mdi:speedometer-slow$$', type: sym_by_sym}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: '$$mdi:apple-keyboard-command$$', type: held}
   - {type: held}
-  - ␣
-  - ⏎
+  - {type: held}
   - {t: ▽, type: trans}
-  - $$mdi:apple-keyboard-option$$
-combos:
-- p: [12, 0]
-  k: '~'
-- p: [24, 12]
-  k: '`'
-- p: [3, 4]
-  k: KP PLUS
-- p: [15, 16]
-  k: KP MINUS
-- p: [5, 4]
-  k: (
-- p: [27, 28]
-  k: '"'
-- p: [20, 21]
-  k: ''''
-- p: [29, 28]
-  k: '['
-- p: [16, 17]
-  k: '{'
-- p: [6, 7]
-  k: )
-- p: [30, 31]
-  k: ']'
-- p: [19, 18]
-  k: '}'
-- p: [7, 8]
-  k: _
-- p: [32, 31]
-  k: '|'
-- p: [19, 20]
-  k: '='
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
