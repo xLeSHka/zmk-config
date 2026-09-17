@@ -42,7 +42,7 @@ layers:
   - adj
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '"'
+  - {t: ▽, type: trans}
   - fbu
   rai:
   - {t: ▽, type: trans}
