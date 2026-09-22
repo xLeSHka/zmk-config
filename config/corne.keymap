@@ -80,7 +80,7 @@
         fbut {
             display-name = "fbu";
             bindings = <
-&trans  &trans     &kp F10   &kp F11   &kp F12    &trans    &kp N1  &kp N2  &kp N3  &kp F1  &kp F2  &kp F3
+&trans  &kp F1     &kp F10   &kp F11   &kp F12    &trans    &kp N1  &kp N2  &kp N3  &kp N0  &kp F2  &kp F3
 &trans  &sk LCTRL  &sk LGUI  &sk LALT  &sk LSHFT  &trans    &kp N4  &kp N5  &kp N6  &kp F4  &kp F5  &kp F6
 &trans  &trans     &trans    &trans    &trans     &trans    &kp N7  &kp N8  &kp N9  &kp F7  &kp F8  &kp F9
                              &trans    &trans     &trans    &trans  &trans  &trans
