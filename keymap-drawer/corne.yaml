@@ -62,10 +62,10 @@ layers:
   - {t: LEFT ALT, h: sticky}
   - {t: LEFT SHIFT, h: sticky}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - PAGE UP
+  - UP ARROW
+  - Page Down
+  - Home
   - /
   - '|'
   - {t: ▽, type: trans}
@@ -74,10 +74,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - LEFT ARROW
+  - ↓
+  - →
+  - End
   - {t: ▽, type: trans}
   - \
   - {type: held}
@@ -89,10 +89,6 @@ layers:
   rai:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Page Up
-  - ↑
-  - PAGE DOWN
-  - End
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -101,10 +97,14 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - ←
-  - ↓
-  - →
-  - End
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: RIGHT SHIFT, h: sticky}
   - {t: RIGHT ALT, h: sticky}

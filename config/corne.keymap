@@ -59,20 +59,20 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp GRAVE  &kp NUMBER_1      &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4    &kp NUMBER_5    &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &kp MINUS
-&kp TILDE  &sk LEFT_CONTROL  &sk LEFT_GUI  &sk LEFT_ALT  &sk LEFT_SHIFT  &trans          &trans        &trans        &trans        &trans        &kp SLASH     &kp PIPE
-&trans     &trans            &trans        &trans        &trans          &trans          &trans        &trans        &trans        &trans        &trans        &kp BACKSLASH
-                                           &trans        &mo 4           &trans          &trans        &trans        &mo 3
+&kp GRAVE  &kp NUMBER_1      &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4    &kp NUMBER_5    &kp NUMBER_6    &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &kp MINUS
+&kp TILDE  &sk LEFT_CONTROL  &sk LEFT_GUI  &sk LEFT_ALT  &sk LEFT_SHIFT  &trans          &kp PAGE_UP     &kp UP_ARROW  &kp PG_DN     &kp HOME      &kp SLASH     &kp PIPE
+&trans     &trans            &trans        &trans        &trans          &trans          &kp LEFT_ARROW  &kp DOWN      &kp RIGHT     &kp END       &trans        &kp BACKSLASH
+                                           &trans        &mo 4           &trans          &trans          &trans        &mo 3
             >;
         };
 
         raise {
             display-name = "rai";
             bindings = <
-&trans  &trans  &kp PG_UP  &kp UP    &kp PAGE_DOWN  &kp END    &trans  &trans           &trans         &trans         &trans             &trans
-&trans  &trans  &kp LEFT   &kp DOWN  &kp RIGHT      &kp END    &trans  &sk RIGHT_SHIFT  &sk RIGHT_ALT  &sk RIGHT_GUI  &sk RIGHT_CONTROL  &trans
-&trans  &trans  &trans     &trans    &trans         &trans     &trans  &trans           &trans         &trans         &trans             &trans
-                           &mo 3     &trans         &trans     &trans  &trans           &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans           &trans         &trans         &trans             &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &sk RIGHT_SHIFT  &sk RIGHT_ALT  &sk RIGHT_GUI  &sk RIGHT_CONTROL  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans           &trans         &trans         &trans             &trans
+                        &mo 3   &trans  &trans    &trans  &trans           &trans
             >;
         };
 
