@@ -59,10 +59,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp GRAVE  &kp NUMBER_1      &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4    &kp NUMBER_5    &kp NUMBER_6    &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &kp MINUS
-&kp TILDE  &sk LEFT_CONTROL  &sk LEFT_GUI  &sk LEFT_ALT  &sk LEFT_SHIFT  &trans          &kp PAGE_UP     &kp UP_ARROW  &kp PG_DN     &kp HOME      &kp SLASH     &kp PIPE
-&trans     &trans            &trans        &trans        &trans          &trans          &kp LEFT_ARROW  &kp DOWN      &kp RIGHT     &kp END       &trans        &kp BACKSLASH
-                                           &trans        &mo 4           &trans          &trans          &trans        &mo 3
+&kp GRAVE  &kp NUMBER_1      &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4    &kp NUMBER_5    &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8    &kp NUMBER_9   &kp NUMBER_0  &kp MINUS
+&kp TILDE  &sk LEFT_CONTROL  &sk LEFT_GUI  &sk LEFT_ALT  &sk LEFT_SHIFT  &trans          &kp HOME      &kp PG_UP     &kp UP_ARROW    &kp PAGE_DOWN  &kp SLASH     &kp PIPE
+&trans     &trans            &trans        &trans        &trans          &trans          &kp END       &kp LEFT      &kp DOWN_ARROW  &kp RIGHT      &trans        &kp BACKSLASH
+                                           &trans        &mo 4           &trans          &trans        &trans        &mo 3
             >;
         };
 
